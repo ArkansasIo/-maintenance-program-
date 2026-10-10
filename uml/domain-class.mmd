@@ -1,0 +1,11 @@
+classDiagram
+    Organization "1" --> "*" Site
+    Site "1" --> "*" Location
+    Site "1" --> "*" Asset
+    Asset "1" --> "*" WorkOrder
+    WorkOrder "1" --> "*" WorkOrderTask
+    Asset "1" --> "*" PMSchedule
+    Asset "1" --> "*" Inspection
+    Organization "1" --> "*" Employee
+    Organization "1" --> "*" Part
+    Organization "1" --> "*" AuditLog
