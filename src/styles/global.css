@@ -1,0 +1,37 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #17202a;
+  background: #eef2f6;
+  --primary: #1769aa;
+  --surface: #fff;
+  --border: #d7dee5;
+  --danger: #dc2626;
+  --warning: #d97706;
+  --success: #16a34a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+.app { min-height: 100vh; }
+.topbar { height: 64px; background: #172b3a; color: white; display:flex; align-items:center; gap:24px; padding:0 22px; }
+.brand { font-weight:800; letter-spacing:.06em; }
+.global-search { flex:1; max-width:700px; background:#fff; border:0; border-radius:7px; padding:10px 14px; }
+.user { margin-left:auto; }
+.shell { display:grid; grid-template-columns:250px 1fr; min-height:calc(100vh - 64px); }
+.sidebar { background:#fff; border-right:1px solid var(--border); padding:18px 12px; overflow:auto; }
+.sidebar section { margin-bottom:18px; }
+.menu-title { font-size:12px; font-weight:800; color:#667684; text-transform:uppercase; padding:6px 10px; }
+.nav { display:block; width:100%; text-align:left; border:0; background:transparent; padding:9px 12px; border-radius:7px; cursor:pointer; color:#243746; }
+.nav:hover,.nav.active { background:#e8f1f8; color:var(--primary); font-weight:650; }
+.content { padding:28px; max-width:1500px; width:100%; margin:auto; }
+.page-head { display:flex; justify-content:space-between; align-items:center; }
+h1 { margin:0; font-size:30px; } h2 { margin-top:0; }
+.page-head p { color:#687783; }
+.primary { background:var(--primary); color:white; border:0; padding:11px 15px; border-radius:7px; cursor:pointer; }
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; margin:22px 0; }
+.metric,.panel { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; }
+.metric span { color:#667684; display:block; } .metric strong { font-size:32px; display:block; margin-top:7px; }
+table { width:100%; border-collapse:collapse; } th,td { padding:12px; border-bottom:1px solid #e7ebee; text-align:left; }
+.badge { background:#edf1f4; padding:4px 8px; border-radius:999px; }
+.badge.danger { background:#fee2e2; color:#991b1b; } .badge.warn { background:#fef3c7; color:#92400e; }
+@media(max-width:900px){.shell{grid-template-columns:1fr}.sidebar{display:none}.metrics{grid-template-columns:1fr 1fr}.content{padding:18px}}
