@@ -1,0 +1,18 @@
+flowchart TB
+    UI[TypeScript Web UI]
+    CSS[CSS Design System]
+    API[TypeScript API]
+    AUTH[Authentication / RBAC]
+    SERVICE[Maintenance Services]
+    DB[(MySQL)]
+    XLSX[Excel Import / Export]
+    FILES[Document Storage]
+    AUDIT[Audit Log]
+    UI --> CSS
+    UI --> API
+    API --> AUTH
+    API --> SERVICE
+    SERVICE --> DB
+    SERVICE --> XLSX
+    SERVICE --> FILES
+    SERVICE --> AUDIT
