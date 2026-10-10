@@ -1,0 +1,14 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Open
+    Open --> Assigned
+    Assigned --> InProgress
+    InProgress --> OnHold
+    OnHold --> InProgress
+    InProgress --> Completed
+    Completed --> Verified
+    Verified --> Closed
+    Open --> Cancelled
+    Assigned --> Cancelled
+    Completed --> Reopened
+    Reopened --> InProgress
